@@ -4,6 +4,7 @@ var overlay = document.querySelector(".overlay")
 var heading1=document.querySelector(".heading-1");
 var heading2=document.querySelector(".heading-2");
 var heading3=document.querySelector(".heading-3");
+var header = document.querySelector("#header");
 var count1=0;
 var count2=0;
 var count3=0;
@@ -122,7 +123,7 @@ ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
 ScrollTrigger.refresh();
 
 }
-init();
+// init();
 window.addEventListener("load",function()
 {
 this.setTimeout(
@@ -137,3 +138,17 @@ document.querySelector(".iconmost").addEventListener("click",function()
 {
     document.querySelector(".box-form").style.display="none";
 })
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    var header = document.querySelector("#header");
+
+    window.addEventListener("scroll", function () {
+        if (window.scrollY > 50) {
+            header.classList.add("scrolled");
+        } else {
+            header.classList.remove("scrolled");
+        }
+    });
+});

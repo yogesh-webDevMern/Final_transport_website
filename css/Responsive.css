@@ -1,4 +1,31 @@
 @media (max-width:576px) and (min-width:0) {
+  #header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: transparent; /* Default: transparent */
+    transition: all 0.3s ease-in-out;
+    z-index: 100000; /* Ensure it's above other elements */
+    padding: 15px 0;
+    background-color:#1E8FD0 ;
+  }
+  #header.scrolled {
+    background: rgba(255, 255, 255, 0.2); /* Semi-transparent */
+    color: black;
+    backdrop-filter: blur(10px); /* Blur effect */
+    -webkit-backdrop-filter: blur(10px); /* Safari support */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Soft shadow */
+    border-radius: 10px; /* Optional */
+    padding: 10px 0; /* Adjust padding after scrolling */
+  }
+  
+  #header.scrolled {
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent */
+    backdrop-filter: blur(10px); /* Blur effect */
+    -webkit-backdrop-filter: blur(10px); /* Safari support */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Soft shadow */
+  }
   .provideSec
 {
     color:white;margin-left: 15px;padding-top: 30px;
