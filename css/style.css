@@ -394,3 +394,12 @@ left: 944px;
 {
     color:white;margin-left: 30px;padding-top: 50px;
 }
+.whatsec
+{
+    text-align: center;
+    font-weight: bold;
+}
+.whatsecpara
+{
+    justify-content: center;
+}
