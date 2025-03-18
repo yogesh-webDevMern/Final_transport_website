@@ -158,22 +158,43 @@ gsap.from("#scrollanim",
        x:200,
         opacity:0,
         duration:1.5,
-        scrollTrigger:"#scrollanim"
+        scrollTrigger:
+        {
+            trigger:"#scrollanim",
+            scroller:"body",
+            start:"top 60%",
+            end:"top 30%",
+            scrub:3
+        }
     }
 )
 gsap.from("#scrollanim2",
     {
-        x:-200,
+       x:-200,
         opacity:0,
         duration:1.5,
-        scrollTrigger:"#scrollanim2"
+        scrollTrigger:
+        {
+            trigger:"#scrollanim2",
+            scroller:"body",
+            start:"top 60%",
+            end:"top 30%",
+            scrub:3
+        }
     }
 )
 gsap.from("#scrollanim3",
     {
-        x:200,
+       x:200,
         opacity:0,
         duration:1.5,
-        scrollTrigger:"#scrollanim3"
+        scrollTrigger:
+        {
+            trigger:"#scrollanim3",
+            scroller:"body",
+            start:"top 60%",
+            end:"top 30%",
+            scrub:3
+        }
     }
 )
