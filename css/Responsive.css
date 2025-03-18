@@ -1,11 +1,19 @@
 @media (max-width:576px) and (min-width:0) {
+  .provideSec
+{
+    color:white;margin-left: 15px;padding-top: 30px;
+}
+  .mapline
+{
+    width: 5px; height: 140px; background-color: rgb(79, 163, 243); margin-left: 10px; margin-top: 30px;
+}
     .kamal-carrier-map-section
 {
-    color:white;padding-top: 20px; font-weight: 700; font-size: 30px;
+    color:white;padding-top: 35px; font-weight: 500; font-size: 30px; line-height: 30px;
 }
 .transport-map-section
 {
-    color:rgb(79, 163, 243);font-size: 30px; font-weight: 700; padding-left: 30px; line-height: 20px;
+    color:rgb(79, 163, 243);font-size: 25px; font-weight: 500; padding-left: 10px; line-height: 35px;
 }
     .first-second-page
 {
