@@ -1,0 +1,388 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.nav a {
+    text-decoration: none;
+    color: white;
+}
+
+header {
+    background-color: #1E8FD0;
+    width: 100%;
+    color: white;
+    top: -1px;
+    z-index: 55555;
+
+}
+
+header h3 {
+    cursor: pointer;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+}
+
+.left {
+    margin-left: 0px;
+    cursor: grab;
+    user-select: none;
+}
+
+.first-page {
+    background-color: #1E8FD0;
+}
+
+.first-page .left h1 span {
+    font-size: 130px;
+    color: white;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 2px #fff;
+}
+
+.first-page .left h1 {
+    font-size: 130px;
+    color: white;
+    /* letter-spacing: -8px; */
+    padding-top: 30px;
+
+}
+
+.first-page .left p {
+    color: white;
+    font-size: 23px;
+    margin-top: 30px;
+
+}
+
+.first-page .left button {
+    color: white;
+    background-color: transparent;
+    border: 1px solid white;
+    margin-bottom: 90px;
+    padding: 10px;
+    transition: 400ms;
+    margin-top: 50px;
+    font-size: 20px;
+}
+
+.first-page .left button:hover {
+    background-color: rgb(255, 166, 0);
+}
+
+.image-box {
+    width: 400px;
+    height: 630px;
+    margin-left: 50px;
+    background: url('../images/bg2.jpg');
+    background-size: cover;
+    animation: move 10s linear infinite;
+    cursor: grab;
+}
+
+@keyframes move {
+    0% {
+        background-position: 0 0;
+    }
+
+    100% {
+        background-position: 0px -630px;
+    }
+}
+
+.truck {
+    top: 50px;
+    left: -250px;
+    animation: speed 3s linear infinite;
+    cursor: grab;
+    user-select: none;
+
+}
+
+.first-page-container {
+    gap: 100px;
+}
+
+@keyframes speed {
+    0% {
+        top: 50px;
+        left: -250px;
+    }
+
+    50% {
+        top: 10px;
+        left: -250px;
+    }
+
+    100% {
+        top: 50px;
+        left: -250px;
+    }
+}
+
+.second-page {
+    width: 100%;
+    background-color:#F2FAFF;
+}
+
+.open-menu {
+    left: 0px !important;
+}
+
+.overflow {
+    overflow-y: hidden;
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.667);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    visibility: hidden;
+    opacity: 0;
+    transition: 400ms;
+}
+
+.show-overlay {
+    opacity: 1 !important;
+    visibility: visible !important;
+
+}
+.what-do
+{
+    font-size: 50px;
+    letter-spacing: -1px;
+    color: orange;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 2px #1E8FD0;
+}
+.first-image
+{
+   width: 400px;
+   height: 500px;
+}
+.image-overlay
+{
+    width:400px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.653);
+    position: absolute;
+    left: 0px;
+    bottom: -500px;
+    color: white;
+    transition: 400ms;
+    opacity: 0;
+    visibility: hidden;
+    padding: 20px;
+}
+.first-image:hover .image-overlay
+{
+    bottom: -250px;
+    opacity: 1;
+    visibility: visible;
+}
+
+.second-image
+{
+    width: 400px;
+    height: 500px;
+}
+.third-image
+{
+    width: 400px;
+    height: 500px;
+}
+.third-page h1
+{
+    color: orange;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 2px #1E8FD0;
+}
+.chose-section
+{
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+}
+.chose-section img
+{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+.vertical-box
+{
+    width: 300px;
+    height: 500px;
+    background-color: #1E8FD0;
+}
+.horizontal-box
+{
+    width: 1200px;
+    height: 400px;
+background-image: url('../images/waves.c2c27eb5771e0461.png');
+    position: absolute;
+    top:60px;
+    left:60px;
+    box-shadow: 0px 0px 20px skyblue;
+    /* background-color: white; */
+}
+.yearex
+{
+    font-size: 150px;
+    -webkit-text-stroke: 10px black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    -webkit-text-fill-color: url("/images/1.jpg");
+}
+.hero {
+    background: url('https://source.unsplash.com/1600x900/?transport,road') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+.contact-info i {
+    font-size: 24px;
+    color: #007bff;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+.box-form
+{
+    width:30vw;
+    height: 75vh;
+    background-color: white;
+ 
+    position: absolute;
+    border-radius: 10px;
+
+  display: none;
+    padding: 50px;
+    z-index: 99999;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.iconmost
+{
+    position: relative;
+   top: -30px;
+   font-size: 20px;
+   left: 100%;
+   cursor: pointer;
+}
+.first-second-page
+{
+    padding: 100px 220px;
+    margin-top: 50px;
+    background: linear-gradient(-120deg, rgba(11, 13, 16, 0.9) 10%, rgb(47, 144, 235) 30%, rgba(14, 18, 29, 0.9) 50%);
+    position: relative;
+}
+
+
+.contactButton {
+    background:rgb(79, 163, 243);
+    color: white;
+    font-family: inherit;
+    padding: 0.45em;
+    padding-left: 1em;
+    font-size: 17px;
+    font-weight: 500;
+    border-radius: 0.9em;
+    border: none;
+    cursor: pointer;
+    letter-spacing: 0.05em;
+    display: flex;
+    align-items: center;
+    box-shadow: inset 0 0 1.6em -0.6em #714da6;
+    overflow: hidden;
+    position: relative;
+    height: 2.8em;
+    padding-right: 3em;
+    margin:15px 20px;
+
+
+  }
+  .point
+  {
+    width: 40px;
+    height: 40px;
+    border:1px solid rgb(79, 163, 243);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    animation:  pulse 2s  linear infinite ;
+  
+  }
+  .pointfill
+  {
+    width: 25px;
+    height: 25px;
+    background-color: rgb(79, 163, 243);
+    border-radius: 50%;
+  }
+  .point1
+  {
+    top: 178px;
+    left: 319px;
+  }
+  .point2
+  {
+    top: 120px;
+    left: 560px;
+  }
+  .point3
+  {
+top: 371px;
+left: 538px;
+  }
+.point4
+{
+top: 371px;
+left: 745px;
+}
+.point5
+{
+top: 206px;
+left: 944px;
+}
+@keyframes pulse {
+    0%
+    {
+        box-shadow: 0 0 10px rgba(169, 190, 210, 0.8), 0 0 0 0 rgba(174, 196, 217, 0.8);
+    }
+    50%
+    {
+        box-shadow: 0 0 20px rgba(167, 199, 228, 0.8), 0 0 10px 10px rgba(168, 193, 217, 0.4);
+    }
+    100%
+    {
+        box-shadow: 0 0 30px rgba(146, 175, 202, 0.8), 0 0 20px 20px rgba(171, 202, 231, 0.8);
+    }
+}
+.kamal-carrier-map-section
+{
+    color:white;padding-top: 20px; font-weight: 700; font-size: 50px;
+}
+.transport-map-section
+{
+    color:rgb(79, 163, 243);font-size: 50px; font-weight: 700; padding-left: 70px; line-height: 20px;
+}
