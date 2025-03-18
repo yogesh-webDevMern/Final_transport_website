@@ -16,7 +16,7 @@
     -webkit-backdrop-filter: blur(10px); /* Safari support */
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Soft shadow */
     border-radius: 10px; /* Optional */
-    padding: 10px 0; /* Adjust padding after scrolling */
+    padding: 5px 0; /* Adjust padding after scrolling */
   }
   
   #header.scrolled {
