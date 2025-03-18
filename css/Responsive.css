@@ -7,7 +7,6 @@
     background: transparent; /* Default: transparent */
     transition: all 0.3s ease-in-out;
     z-index: 100000; /* Ensure it's above other elements */
-    padding: 15px 0;
     background-color:#1E8FD0 ;
   }
   #header.scrolled {
