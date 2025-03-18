@@ -156,27 +156,24 @@ document.addEventListener("DOMContentLoaded", function () {
 gsap.from("#scrollanim",
     {
        x:200,
-       scale:0.8,
         opacity:0,
-        duration:1,
+        duration:1.5,
         scrollTrigger:"#scrollanim"
     }
 )
 gsap.from("#scrollanim2",
     {
         x:-200,
-        scale:0.8,
         opacity:0,
-        duration:1,
+        duration:1.5,
         scrollTrigger:"#scrollanim2"
     }
 )
 gsap.from("#scrollanim3",
     {
         x:200,
-        scale:0.8,
         opacity:0,
-        duration:1,
+        duration:1.5,
         scrollTrigger:"#scrollanim3"
     }
 )
