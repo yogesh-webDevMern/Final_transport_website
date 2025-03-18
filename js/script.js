@@ -153,48 +153,114 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-gsap.from("#scrollanim",
-    {
-       x:200,
-        opacity:0,
-        duration:1.5,
-        scrollTrigger:
+let mm = gsap.matchMedia();
+
+mm.add("(max-width: 768px)", () => {
+    // Animation for Mobile (max-width: 768px)
+    gsap.from("#scrollanim",
         {
-            trigger:"#scrollanim",
-            scroller:"body",
-            start:"top 60%",
-            end:"top 30%",
-            scrub:3
+           x:200,
+            opacity:0,
+            duration:1.5,
+            scrollTrigger:
+            {
+                trigger:"#scrollanim",
+                scroller:"body",
+                start:"top 60%",
+                end:"top 30%",
+                scrub:3
+            }
         }
-    }
-)
-gsap.from("#scrollanim2",
-    {
-       x:-200,
-        opacity:0,
-        duration:1.5,
-        scrollTrigger:
+    )
+    gsap.from("#scrollanim2",
         {
-            trigger:"#scrollanim2",
-            scroller:"body",
-            start:"top 60%",
-            end:"top 30%",
-            scrub:3
+           x:-200,
+            opacity:0,
+            duration:1.5,
+            scrollTrigger:
+            {
+                trigger:"#scrollanim2",
+                scroller:"body",
+                start:"top 60%",
+                end:"top 30%",
+                scrub:3
+            }
         }
-    }
-)
-gsap.from("#scrollanim3",
-    {
-       x:200,
-        opacity:0,
-        duration:1.5,
-        scrollTrigger:
+    )
+    gsap.from("#scrollanim3",
         {
-            trigger:"#scrollanim3",
-            scroller:"body",
-            start:"top 60%",
-            end:"top 30%",
-            scrub:3
+           x:200,
+            opacity:0,
+            duration:1.5,
+            scrollTrigger:
+            {
+                trigger:"#scrollanim3",
+                scroller:"body",
+                start:"top 60%",
+                end:"top 30%",
+                scrub:3
+            }
         }
-    }
-)
+    )
+    gsap.from("#whatwe",
+        {
+            scale:0.6,
+            duration:1,
+            scrollTrigger:
+            {
+                trigger:"#whatwe",
+                scroller:"body",
+                start:"top 60%",
+                end:"top 30%",
+                scrub:3
+            }
+        }
+    )
+});
+
+mm.add("(min-width: 769px)", () => {
+    // Animation for Mobile (max-width: 768px)
+    gsap.from("#scrollanim",
+        {
+          scale:0,
+            opacity:0.5,
+            duration:1.5,
+            scrollTrigger:
+            {
+                trigger:"#scrollanim",
+                scroller:"body",
+                end:"top 50%",
+                scrub:3
+            }
+        }
+    )
+    gsap.from("#scrollanim2",
+        {
+          scale:0,
+            opacity:0.5,
+            duration:1.5,
+            scrollTrigger:
+            {
+                trigger:"#scrollanim2",
+                scroller:"body",
+                end:"top 50%",
+                scrub:3
+            }
+        }
+    )
+    gsap.from("#scrollanim3",
+        {
+           x:200,
+           scale:0,
+            opacity:0.5,
+            duration:1.5,
+            scrollTrigger:
+            {
+                trigger:"#scrollanim3",
+                scroller:"body",
+                end:"top 50%",
+                scrub:3
+            }
+        }
+    )
+});
