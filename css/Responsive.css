@@ -336,5 +336,7 @@ left:  71px;
       .first-image:hover .image-overlay
   {
       bottom: -200px;
+    }
+   
   }
   }

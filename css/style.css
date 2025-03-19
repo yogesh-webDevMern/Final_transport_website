@@ -445,3 +445,37 @@ transform: translateX(200%);
 transform: translateX(-200% );
     }
 }
+.feature-box {
+    background:white;
+    backdrop-filter: blur(15px);
+    border-radius: 15px;
+    padding: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    height: 495px;
+}
+
+/* Hover Effects */
+.feature-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.feature-icon {
+    width: 100%;
+    margin-bottom: 15px;
+
+}
+
+.feature-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #004e92;
+}
+
+.feature-text {
+    font-size: 14px;
+    color: #666;
+}

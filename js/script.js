@@ -168,7 +168,7 @@ mm.add("(max-width: 768px)", () => {
         {
            x:200,
             opacity:0,
-            duration:1.5,
+            duration:0.5,
             scrollTrigger:
             {
                 trigger:"#scrollanim",
@@ -183,7 +183,7 @@ mm.add("(max-width: 768px)", () => {
         {
            x:-200,
             opacity:0,
-            duration:1.5,
+            duration:0.5,
             scrollTrigger:
             {
                 trigger:"#scrollanim2",
@@ -198,7 +198,7 @@ mm.add("(max-width: 768px)", () => {
         {
            x:200,
             opacity:0,
-            duration:1.5,
+            duration:0.5,
             scrollTrigger:
             {
                 trigger:"#scrollanim3",
@@ -212,7 +212,7 @@ mm.add("(max-width: 768px)", () => {
     gsap.from("#scrollingtext",
         {
          scale:0.5,
-            duration:2,
+            duration:0.5,
             scrollTrigger:
             {
                 trigger:"#scrollingtext",
