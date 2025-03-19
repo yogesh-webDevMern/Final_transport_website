@@ -3,20 +3,23 @@
   {  
     width: 100%;
     overflow: hidden;
+    padding-top: 20px;
   }
   .scrollimg img
   {
-    width: 100%;
+    width: 90%;
+    border-radius: 20px;
   }
   
   .scrollText
   {
+    width: 230%;
       padding: 10px;
       background: linear-gradient(to right, #004e92, #fdc830);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       white-space:nowrap;
-      animation: scrolltext 3s linear infinite;
+      animation: scrolltext 6s linear infinite;
   }
   
   .scrollText::-webkit-scrollbar

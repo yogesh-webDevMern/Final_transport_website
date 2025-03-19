@@ -209,6 +209,18 @@ mm.add("(max-width: 768px)", () => {
             }
         }
     )
+    gsap.from("#scrollingtext",
+        {
+         scale:0.5,
+            duration:2,
+            scrollTrigger:
+            {
+                trigger:"#scrollingtext",
+                scroller:"body",
+                scrub:3
+            }
+        }
+    )
     gsap.from("#whatwe",
         {
             scale:0.6,
