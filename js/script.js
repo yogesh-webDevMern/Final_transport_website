@@ -51,31 +51,23 @@ function getData3() {
     }, 20); // Slowing down the interval to make it more manageable
 }
 let triggered = false;
-window.addEventListener('scroll', () => {
-    var scrollPosition = window.scrollY + window.innerHeight;
-    var headingPosition = heading1.offsetTop;
-console.log(!triggered);
+if (heading1 && heading2 && heading3) {  // Ensure elements exist before adding event listener
+    window.addEventListener('scroll', () => {
+        var scrollPosition = window.scrollY + window.innerHeight;
+        var headingPosition = heading1.offsetTop;
 
-    if (scrollPosition >= headingPosition && !triggered) {
-        triggered = true; // Prevent further triggers
-        // console.log(triggered);
-        getData();
-        getData2();
-        getData3();
-    }
-});
-const anim =gsap.timeline();
-anim.from(".headi",{
-    y:30,
-    opacity:0,
-    duration:2,
-
-
-});
+        if (scrollPosition >= headingPosition && !triggered) {
+            triggered = true; // Prevent further triggers
+            getData();
+            getData2();
+            getData3();
+        }
+    });
+}
 // Show the form when the page loads
-window.onload = function () {
-    document.getElementById("contact-form").classList.remove("opacity-0");
-};
+// window.onload = function () {
+//     document.getElementById("contact-form").classList.remove("opacity-0");
+// };
 
 // Function to close the form
 function closeForm() {
@@ -124,26 +116,38 @@ ScrollTrigger.refresh();
 
 }
 // init();
-window.addEventListener("load",function()
-{
-this.setTimeout(
-    function open()
-    {
-        document.querySelector(".box-form").style.display="block";
-    },1000
-)
-}
-)
-document.querySelector(".iconmost").addEventListener("click",function()
-{
-    document.querySelector(".box-form").style.display="none";
-})
+document.addEventListener("DOMContentLoaded", function () {
+    console.log("DOM fully loaded and parsed");
+
+    const boxForm = document.querySelector(".box-form");
+    const iconMost = document.querySelector(".iconmost");
+
+    // Only run this script if the elements exist
+    if (boxForm && iconMost) {
+        console.log("boxForm and iconMost found. Running script.");
+
+        setTimeout(function () {
+            console.log("Showing box-form");
+            boxForm.style.display = "block";
+        }, 1000);
+
+        iconMost.addEventListener("click", function () {
+            console.log("iconmost clicked, hiding box-form");
+            boxForm.style.display = "none";
+        });
+    } else {
+        console.warn("Warning: .box-form or .iconmost not found on this page. Skipping script.");
+    }
+});
+
 
 
 
 document.addEventListener("DOMContentLoaded", function () {
     var header = document.querySelector("#header");
-
+    console.log(header);
+if(header)
+{
     window.addEventListener("scroll", function () {
         if (window.scrollY > 50) {
             header.classList.add("scrolled");
@@ -151,7 +155,10 @@ document.addEventListener("DOMContentLoaded", function () {
             header.classList.remove("scrolled");
         }
     });
+}
+  
 });
+
 
 let mm = gsap.matchMedia();
 
@@ -213,6 +220,32 @@ mm.add("(max-width: 768px)", () => {
                 start:"top 60%",
                 end:"top 30%",
                 scrub:3
+            }
+        }
+    )
+       gsap.from("#aboutimg",
+        {
+            width:"300px",
+            duration:0.4,
+            scrollTrigger:
+            {
+                trigger:"#aboutimg",
+                scroller:"body",
+                start:"top 60%",
+                end:"top 30%",
+                scrub:3
+            }
+        }
+    )
+    gsap.from("#aboutkamalcarrier",
+        {
+            scale:0.5,
+        opacity:0,
+            duration:1,
+            scrollTrigger:
+            {
+                trigger:"#aboutimg",
+                scroller:"body",
             }
         }
     )
