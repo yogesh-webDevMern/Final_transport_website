@@ -1,15 +1,45 @@
 @media (max-width:576px) and (min-width:0) {
-  /* #header {
-    position: fixed;
-    top: 0;
-    left: 0;
+  .scrollimg
+  {  
     width: 100%;
-    background: transparent;
-    transition: all 0.3s ease-in-out;
-    z-index: 100000;
-    background-color:red;
-  } */
- 
+    overflow: hidden;
+  }
+  .scrollimg img
+  {
+    width: 100%;
+  }
+  
+  .scrollText
+  {
+      padding: 10px;
+      background: linear-gradient(to right, #004e92, #fdc830);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      white-space:nowrap;
+      animation: scrolltext 3s linear infinite;
+  }
+  
+  .scrollText::-webkit-scrollbar
+  {
+      display: none;
+  }
+  .scrollText h2
+  {
+      font-size: 30px;
+      font-weight: 700;
+      display: inline-block;
+      letter-spacing: 2px;
+  
+  }
+  @keyframes scrolltext {
+      0%{
+  transform: translateX(100%);
+      }
+      100%
+      {
+  transform: translateX(-100% );
+      }
+  }
   
   #header.scrolled {
     position: fixed;
