@@ -479,3 +479,35 @@ transform: translateX(-200% );
     font-size: 14px;
     color: #666;
 }
+.testimonial-card {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: 0.3s ease-in-out;
+}
+.testimonial-card:hover {
+    transform: translateY(-5px);
+}
+.customer-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+.stars {
+    color: #ffc107;
+}
+.carousel-control-prev-icon {
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" fill="%23007bff" viewBox="0 0 16 16"><path d="M11.354 15.354a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 1 1 .708.708L5.707 8l5.647 6.646a.5.5 0 0 1 0 .708z"/></svg>');
+    width: 40px;
+    height: 40px;
+}
+
+.carousel-control-next-icon {
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" fill="%23007bff" viewBox="0 0 16 16"><path d="M4.646 15.354a.5.5 0 0 1 0-.708L10.293 8 4.646 2.354a.5.5 0 1 1 .708-.708l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708 0z"/></svg>');
+    width: 40px;
+    height: 40px;
+}
