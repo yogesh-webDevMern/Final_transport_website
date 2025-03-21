@@ -511,3 +511,12 @@ transform: translateX(-200% );
     width: 40px;
     height: 40px;
 }
+.backImg
+{
+    height: 230px;
+    width: 100%;
+    padding: 10px;
+    background-image: url('https://img.freepik.com/free-photo/vehicle-move_23-2151846012.jpg?ga=GA1.1.1757076545.1688881343&semt=ais_hybrid');
+    background-attachment: fixed;
+    background-size: cover;
+}
