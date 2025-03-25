@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
     <header class="position-sticky" id="header" >
@@ -46,52 +47,99 @@
             <i id="bar" style="cursor: pointer !important;" class="fa-solid fa-bars  fs-5 d-lg-none"></i>
         </div>
     </header>
-    <div class="overlay"></div>
-    <div class="px-md-4 px-3">
-        <div class="row">
-            <div class="col-md-12 text-center">
-                <h2>Our Experience</h2>
-                <p class="lead">With 30 years of experience in the transportation sector, we have built a reputation for excellence.</p>
-            </div>
-        </div>
-        <div class="backImg"></div>
-        <div class="row mt-4" >
-            <div class="col-md-6">
-                <h3>Leadership</h3>
-                <p>Our company is led by Mr. Rupesh Kumar Sharma, who has extensive experience in the transportation industry. Under his leadership, we have grown to become one of the most trusted names in Jaipur.</p>
-                <p>Our packing services are managed by Mr. Mahesh Kumar Sharma, whose polite nature and dedication to providing the best services have earned us a loyal customer base.</p>
-            </div>
-            <div class="col-md-6">
-                <h3>Customer Satisfaction</h3>
-                <p>We have provided numerous transport services over the years, and our clients are always happy with our work. Our commitment to customer satisfaction is unmatched, and we strive to exceed expectations with every job.</p>
-            </div>
+    <div class="relative w-full h-[50vh] bg-cover bg-center" style="background-image: url('./images/page-title01.jpg');">
+        <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+            <h1 class="text-white text-4xl md:text-6xl font-bold">About Us</h1>
         </div>
     </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12 text-center">
-                <h2 id="aboutkamalcarrier">About Kamal Carrier</h2>
-                <p class="lead">We provide faster and reliable moving services</p>
-            </div>
-        </div>
-        <div class="row mt-4">
-            <div class="col-md-6 mb-4 mb-md-0 text-center rounded-sm">
-                <img style="border-radius: 10px;" src="./images/4294649.jpg" id="aboutimg" class="img-fluid" alt="Kamal Carrier">
-            </div>
-            <div class="col-md-6">
-                <h2>Our Mission</h2>
-                <p>At Kamal Carrier, our mission is to provide the fastest and most reliable transportation services. We understand the importance of timely deliveries and ensure that your goods reach their destination safely and on time.</p>
-                <h2>Why Choose Us?</h2>
-                <ul>
-                    <li>Fast and efficient services</li>
-                    <li>Experienced and professional team</li>
-                    <li>Safe and secure transportation</li>
-                    <li>Competitive pricing</li>
+
+    <!-- Breadcrumbs -->
+    <div class=" mx-auto px-4 py-4 text-gray-600">
+        <p>You are here: <span class="text-blue-500">Home</span> / <span class="text-black font-semibold">About Us</span></p>
+    </div>
+
+    <!-- About Section -->
+    <section class=" mx-auto px-6 md:px-12 text-center">
+        <h2 class="text-3xl font-bold text-gray-800">Who we are</h2>
+        <p class="text-[#1e8fd0] text-sm mb-2">MORE THAN JUST A TRUCKING TEMPLATE</p>
+        <div class="w-16 h-1 bg-[#1e8fd0] mx-auto mb-4"></div>
+        <p class="text-lg text-gray-700 font-semibold max-w-2xl mx-auto">
+            Trucking, logistics company operating in over <span class="text-black font-bold">150 countries worldwide</span>, providing great shipping experience to our clients.
+        </p>
+    </section>
+
+
+    <section class="container mx-auto px-6 py-12">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            <!-- Left Side Content -->
+            <div>
+                <div class="border-l-4 border-blue-500 pl-3">
+                    <h2 class="text-3xl font-bold text-gray-900">THE TRUCKING BRAND</h2>
+                </div>
+                <p class="text-gray-600 mt-4">
+                    Cozy sphinx waves quart jug of bad milk. A very bad quack might jinx zippy fowls. Few quips galvanized the mock jury box.
+                    Quick brown dogs jump over the lazy fox. The jay, pig, fox, zebra, and my wolves quack! 
+                    Blowzy red vixens fight for a quick jump.
+                </p>
+                <ul class="mt-6 space-y-2 text-gray-700">
+                    <li class="flex items-center">
+                        <span class="text-blue-500 text-lg">➝</span>
+                        <span class="ml-2">Operating worldwide</span>
+                    </li>
+                    <li class="flex items-center">
+                        <span class="text-blue-500 text-lg">➝</span>
+                        <span class="ml-2">Professional personnel</span>
+                    </li>
+                    <li class="flex items-center">
+                        <span class="text-blue-500 text-lg">➝</span>
+                        <span class="ml-2">End-to-end solutions</span>
+                    </li>
+                    <li class="flex items-center">
+                        <span class="text-blue-500 text-lg">➝</span>
+                        <span class="ml-2">Flexible services</span>
+                    </li>
                 </ul>
             </div>
-        </div>
-    </div>
- <footer class="bg-dark text-white mt-5">
+
+            <!-- Right Side Image -->
+            <div>
+                <img src="./images/img25.jpg" alt="Trucking Brand" class="w-full rounded-lg shadow-sm">
+            </div>
+            
+            <!-- Right Side Image -->
+            <div class="mt-5">
+                <img src="./images/img-bkg02.jpg" alt="Trucking Brand" class="w-full rounded-lg shadow-sm">
+            </div>
+            <div>
+                <div class="border-l-4 border-blue-500 pl-3 mt-5">
+                    <h2 class="text-3xl font-bold text-gray-900">SAFETY AND SECURITY</h2>
+                </div>
+                <p class="text-gray-600 mt-4">
+                    Cozy sphinx waves quart jug of bad milk. A very bad quack might jinx zippy fowls. Few quips galvanized the mock jury box. Quick brown dogs jump over the lazy fox. The jay, pig, fox, zebra, and my wolves quack! Blowzy red vixens fight for a quick jump. Joaquin Phoenix was gazed by MTV for luck. A wizard’s job is to vex chumps quickly in fog. Watch "Jeopardy!", Alex Trebek's fun TV quiz game. Woven silk pyjamas exchanged for blue quartz. Brawny gods just.
+
+                    Cozy sphinx waves quart jug of bad milk. A very bad quack might jinx zippy fowls. Few quips galvanized the mock jury box. Quick brown dogs jump over the lazy fox. The jay, pig, fox, zebra, and my wolves quack! Blowzy red vixens fight for a quick jump. Joaquin Phoenix was gazed by MTV for luck.
+                </p>
+                <ul class="mt-6 space-y-2 text-gray-700">
+                    <li class="flex items-center">
+                        <span class="text-blue-500 text-lg">➝</span>
+                        <span class="ml-2">Operating worldwide</span>
+                    </li>
+                    <li class="flex items-center">
+                        <span class="text-blue-500 text-lg">➝</span>
+                        <span class="ml-2">Professional personnel</span>
+                    </li>
+                    <li class="flex items-center">
+                        <span class="text-blue-500 text-lg">➝</span>
+                        <span class="ml-2">End-to-end solutions</span>
+                    </li>
+                    <li class="flex items-center">
+                        <span class="text-blue-500 text-lg">➝</span>
+                        <span class="ml-2">Flexible services</span>
+                    </li>
+                </ul>
+            </div>
+
+ <footer class="bg-dark w-[100vw] md:w-[99vw] position-relative left-[-25px] md:left-[-25px] text-white mt-5">
     <div class="container py-4">
         <div class="row">
             <div class="col-md-4">
